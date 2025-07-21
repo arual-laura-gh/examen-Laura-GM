@@ -1,0 +1,241 @@
+/* Asegúrate de que el body no tenga scroll lateral */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* importante para evitar desbordes inesperados */
+}
+
+.elnavbar{
+background-color: #F2B90F!important;
+  margin-right: 1rem;
+  font-weight: bold;
+  width: 100%;
+
+   }
+
+.elnavbar a:hover {
+  color: #6EC1E4 !important; /* Color al pasar el mouse*/
+  text-decoration-line: none !important;
+text-decoration-style: none !important;
+  }
+
+.titulo{ /* El título del navbar*/
+  color: white;
+    text-decoration: none;
+  }
+
+.titulo:hover {
+  color: #6EC1E4 !important; /* Color al pasar el mouse*/
+  text-decoration-line: none !important;
+text-decoration-style: none !important;
+  }
+
+  #elfooter{
+background-color: darkblue;
+  }
+
+.footer-blanco * {
+  color: white !important;
+  fill: white !important;
+}
+
+.titulo2 h1 { /* El título de la página*/
+text-align: center;
+}
+
+.titulo2{ /* El título de la página*/
+background-color: darkblue;
+color: white;
+padding: 10px;
+}
+
+#formulario{
+background-color:darkblue;
+ padding: 20px 0;
+color: white;
+font-weight: bold;
+scroll-margin-top: 50px;
+}
+
+/*personalización de los botones */
+
+.button_slide {
+   border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #6EC1E4;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+  color:white;
+}
+
+.slide_diagonal:hover {
+  box-shadow: inset 400px 50px 0 0 #6EC1E4;
+}
+
+#outer {
+  width: 100%;
+  max-width: 364px; /* Limita el tamaño en pantallas grandes */
+  margin: 20px auto 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.botones{
+background-color: #F2B90F;
+margin-bottom: -10px;
+}
+
+
+
+.introduccion{
+background-color: #6EC1E4 !important;
+padding-top: 20px;
+padding-bottom: 10px;
+border-radius: 10px;
+padding-left: 5px;
+padding-right: 5px;
+box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* sombra */
+font-size: 16px;
+text-align: center;
+margin-bottom: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#historia h2{
+font-size: 30px;
+}
+#historia h3{
+font-size: 22px !important;  
+text-align: center;
+}
+
+#sobremi h2{
+font-size: 30px;
+text-align: center;
+justify-content: center;
+}
+
+#sobremi h3{
+font-size: 20px !important;  
+text-align: center;
+}
+
+
+#sobremi{
+background-color:darkblue;
+color: white;
+}
+
+#sobremi h3 {
+  margin-bottom: 0; 
+}
+
+#ensenanzas h2 {
+  margin-top: 0 !important;
+}
+
+#sobremi h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.fotiko{
+margin-bottom: 5px;
+}
+
+.aqui{
+box-shadow: 0 4px 10px rgba(30, 100, 140, 0.3); /* sombra azul oscuro translúcida */
+}
+
+#sobrante{
+text-align: center;
+}
+
+#sobrante h2{
+font-size: 30px;
+}
+
+#sobrante h3 {
+  font-size: 22px;
+  text-align: center;
+  background-color: #6EC1E4;
+  padding: 12px;
+}
+
+#tengosueño{
+text-align: center;
+}
+
+#testimonios .container {
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(30, 100, 140, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#testimonios {
+  scroll-margin-top: 80px;
+}
+
+#historia {
+  scroll-margin-top: 80px;
+}
+
+#mapa {
+  scroll-margin-top: 80px;
+}
+
+#formulario{
+  scroll-margin-top: 80px;
+}
+
+ #mapa-contenedor {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  #mapa {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+
+  #mapa iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    display: block;
+  }
+
+  #texto-lateral {
+    flex: 1;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  /* En pantallas pequeñas */
+  @media (max-width: 767px) {
+    #mapa-contenedor {
+      flex-direction: column;
+    }
+
+    #mapa,
+    #mapa iframe {
+      width: 100vw;
+      max-width: 100%;
+    }
+
+    #texto-lateral {
+      max-width: 100%;
+      padding: 0 15px;
+    }
+  }

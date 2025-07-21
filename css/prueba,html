@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prueba Márgenes</title>
+<style>
+  #sobremi h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: 2px solid red;
+  }
+
+  #ensenanzas h2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    border: 2px solid blue;
+  }
+
+  body, section {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+<body>
+
+<section id="sobremi" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center">
+        <img src="fotos/mesias1.webp" class="img-fluid rounded-circle" alt="Retrato del mesías" />
+      </div>
+      <div class="col-md-8">
+        <h3>Sin embargo, nuestro querido cerrajero albergaba una debilidad: no sabía hacer su propia página web.</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ensenanzas" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">✨ Obra y Milagros</h2>
+  </div>
+</section>
+
+</body>
+</html>
